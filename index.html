@@ -3,19 +3,110 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Jquery</title>
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="bootstrap.css">
 	<link rel="stylesheet" href="app.css">
 
 </head>
 <body>
 	<div id="app-container">
-		<header id="header-container">
-			<h1>Mi app</h1>
-			<h2>aplicacion realizada durante el curso de JQuery</h2>
+		<header id="header-container" data-title="TVify">
+			<h1>TVify</h1>
+			<!-- nav -->
+				<nav class="navbar navbar-expand-lg navbar-light bg-light">
+					<a class="navbar-brand" href="#"><h4>TVify</h4></a>
+					  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					    <span class="navbar-toggler-icon"></span>
+					  </button>
+
+					  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+					    <ul class="navbar-nav mr-auto">
+					      <li class="nav-item active">
+					        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+					      </li>
+					      <li class="nav-item">
+					        <a class="nav-link" href="#">Api</a>
+					      </li>
+					      <li class="nav-item">
+					        <a class="nav-link" href="#">Docs</a>
+					      </li>
+					    </ul>
+					  </div>
+					</nav>
+			<!-- /navegacion -->
 		</header>
 		<section id="app-body">
-			<div class="pelota b"></div>
-			<div id="bd"></div>
+				<div class="row filas">
+					<div class="col-12 col-md-3 text-center">
+						<img src="340005.jpg" alt="">
+					</div>
+					<div class="col-12 col-md-9">
+						<div class="row">
+							<div class="col-12 col-md-7 text-center text-md-left">
+								<p><b>The Alienist</b> 
+									based on the Anthony Award-winning New York Times bestseller by Caleb Carr, is a fast-paced and atmospheric psychological thriller set in the fascinating and gritty world of Gilded Age New York City. After a series of haunting and gruesome murders, psychiatrist Dr. Laszlo Kreizler, newspaper reporter John Moore and police commissioner Theodore Roosevelt come together employing emerging disciplines of psychology and early crime investigation techniques to track down one of New York City's first serial killers
+								</p>
+							</div>
+							<div class="card col-12 col-md-5">
+								<div class="card bg-light mb-3" style="max-width: 18rem;">
+								  <div class="card-header">Show Info</div>
+								  <div class="card-body">
+								    <h5 class="card-title"> <a href="www.tntdrama.com">Official web</a> </h5>
+								    <p class="card-text"> <b>Airs on</b> :United States TNT (2018 - now) <br>
+										<b>Runtime</b>: 60 minutes <br>
+										<b>Status</b>: Running <br>
+										<b>Show Type</b>: Scripted <br>
+										<b>Show Type</b>: Drama Crime Thriller <br>
+										<b>Episodes ordered</b>: 10 episodes </p> <br>
+								  </div>
+								</div>
+							</div>
+						</div>	
+					</div>
+				</div>
+				<hr>
+								<div class="row filas">
+					<div class="col-12 col-md-3 text-center">
+						<img src="366328.jpg" alt="">
+					</div>
+					<div class="col-12 col-md-9">
+						<div class="row text-center text-md-left">
+							<div class="col-12 col-md-7">
+								<p><b>Final Space</b> is a serialized intergalactic space saga about an astronaut named Gary and his adorable, planet-destroying friend, Mooncake. The series will follow their adventures as they embark on a quest to unlock the mystery of "Final Space," the place where the entire universe ends.</p>
+							</div>
+							<div class="card col-12 col-md-5">
+								<div class="card bg-light mb-3" style="max-width: 18rem;">
+								  <div class="card-header">Header</div>
+								  <div class="card-body">
+								    <h5 class="card-title">Light card title</h5>
+								    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								  </div>
+								</div>
+							</div>
+						</div>	
+					</div>
+				</div>
+				<hr>
+								<div class="row filas">
+					<div class="col-12 col-md-3 text-center">
+						<img src="366328.jpg" alt="">
+					</div>
+					<div class="col-12 col-md-9">
+						<div class="row">
+							<div class="col-12 col-md-7 text-center text-md-left">
+								<p><b>Final Space</b> is a serialized intergalactic space saga about an astronaut named Gary and his adorable, planet-destroying friend, Mooncake. The series will follow their adventures as they embark on a quest to unlock the mystery of "Final Space," the place where the entire universe ends.</p>
+							</div>
+							<div class="card col-12 col-md-5">
+								<div class="card bg-light mb-3" style="max-width: 18rem;">
+								  <div class="card-header">Header</div>
+								  <div class="card-body">
+								    <h5 class="card-title">Light card title</h5>
+								    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								  </div>
+								</div>
+							</div>
+						</div>	
+					</div>
+				</div>
 		</section>
 		<footer id="app-footer">
 			Hecho con &lt;3 por los alunnos de platzi
