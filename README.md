@@ -1,14 +1,9 @@
-
 <snippet>
   <content><![CDATA[
-# ${1:curso de JS y Javascript}
-actividades hechas durante el curso
-## Curso faces
-iniciando jquery desde cdn
-agregando src jq desde las carpetas
-funcion $ = jquery
-$().ready
-uso de selectores
+# ${1:Project Name}
+TODO: Write a project description
+## Installation
+TODO: Describe the installation process
 ## Usage
 TODO: Write usage instructions
 ## Contributing
