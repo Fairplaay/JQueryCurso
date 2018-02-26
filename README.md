@@ -1,4 +1,4 @@
-#curso de JS y Javascript
+#curso de JS y Javascript <h1>
 #26/02/18
 actividades hechas durante el curso
 
