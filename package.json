@@ -5,8 +5,9 @@
   "main": "app.js",
   "scripts": {
     "public": "mkdir -p public",
-    "bundle": "browserify -t [ babelify --presets [ env ] ] app.js > public/bundle.js",
-    "copyfile": "cp app.css public/app.css && cp index.html public/index.html && cp bootstrap.css public/bootstrap.css",
+    "bundle": "browserify -t [ babelify --presets [ env ] ] src/app.js > public/bundle.js",
+    "copyfile": "cp src/app.css public/app.css && cp src/index.html public/index.html && cp src/bootstrap.css public/bootstrap.css",
+    "go": "npm run  public && npm run bundle && npm run copyfile",
     "serve": "serve public"
   },
   "repository": {
