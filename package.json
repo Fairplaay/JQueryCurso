@@ -1,0 +1,25 @@
+{
+  "name": "jquerycurso",
+  "version": "1.0.0",
+  "description": "> Proyecto curso de platzi",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fairplaay/JQueryCurso.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fairplaay/JQueryCurso/issues"
+  },
+  "homepage": "https://github.com/Fairplaay/JQueryCurso#readme",
+  "dependencies": {
+    "whatwg-fetch": "^2.0.3"
+  },
+  "devDependencies": {
+    "browserify": "^16.1.0"
+  }
+}
