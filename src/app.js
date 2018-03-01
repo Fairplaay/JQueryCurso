@@ -1,3 +1,4 @@
+import $ from 'jquery'
 $(function () {
 	/*
 	**Submit form
@@ -39,6 +40,14 @@ $(function () {
 			})
 	}
 
+	$container.on('click', 'a.like',function(ev){
+		ev.preventDefault();
+		var $this = $(this);
+		$this.toggleClass('text');
+		$this.closest('#liked').toggleClass('liked')
+	});
+
+
 	$('#search')
     .submit(function (ev) {
       ev.preventDefault();
@@ -53,7 +62,7 @@ $(function () {
          var shows = res.map(function (el) {
             return el.show;
           })
-         renderSearch(shows);    
+         renderSearch(shows);   
         }
       })
     })
@@ -62,10 +71,11 @@ $(function () {
 							'<img src=":image:" alt=":alt:">'+
 						'</div>'+
 					'<div class="col-12 col-md-9 shows-tv">'+
-						'<div class="row">'+
+						'<div id="liked" class="row">'+
 							'<div class="col-12 col-md-7 text-center text-md-left">'+
 								'<h4>:name:</h4>'+
 								'<p>:summary:'+
+								'<a href="#" class="badge badge-info like">Like</a>'+
 							'</div>'+
 							'<div class="card col-12 col-md-5">'+
 								'<div class="card bg-light mb-3" style="max-width: 18rem;">'+

@@ -4,7 +4,10 @@
   "description": "> Proyecto curso de platzi",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "public": "mkdir -p public",
+    "bundle": "browserify -t [ babelify --presets [ env ] ] app.js > public/bundle.js",
+    "copyfile": "cp app.css public/app.css && cp index.html public/index.html && cp bootstrap.css public/bootstrap.css",
+    "serve": "serve public"
   },
   "repository": {
     "type": "git",
@@ -17,9 +20,14 @@
   },
   "homepage": "https://github.com/Fairplaay/JQueryCurso#readme",
   "dependencies": {
+    "jquery": "^3.3.1",
+    "serve": "^6.5.1",
     "whatwg-fetch": "^2.0.3"
   },
   "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babelify": "^8.0.0",
     "browserify": "^16.1.0"
   }
 }
