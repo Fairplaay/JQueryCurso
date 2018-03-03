@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "public": "mkdir -p public",
-    "bundle": "browserify -t [ babelify --presets [ env ] ] src/app.js > public/bundle.js",
+    "bundle": "NODE_PATH=. browserify -t [ babelify --presets [ env ] ] src/app.js > public/bundle.js",
     "copyfile": "cp src/app.css public/app.css && cp src/index.html public/index.html && cp src/bootstrap.css public/bootstrap.css",
     "go": "npm run  public && npm run bundle && npm run copyfile",
     "serve": "serve public"
@@ -22,6 +22,8 @@
   "homepage": "https://github.com/Fairplaay/JQueryCurso#readme",
   "dependencies": {
     "jquery": "^3.3.1",
+    "page": "^1.8.4",
+    "qs": "^6.5.1",
     "serve": "^6.5.1",
     "whatwg-fetch": "^2.0.3"
   },
@@ -29,6 +31,7 @@
     "babel-core": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "babelify": "^8.0.0",
-    "browserify": "^16.1.0"
+    "browserify": "^16.1.0",
+    "eslint": "^4.18.1"
   }
 }

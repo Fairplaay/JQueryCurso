@@ -5,8 +5,8 @@
 ## Build Setup
 
 ``` bash
-# install dependencies
-jquery CDN
+# install
+run in browser o serve
 ```
 
 For detailed explanation on how things work, consult the [docs](http://jquery.com).
